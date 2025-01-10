@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Page</title>
+    <!-- Load Bootstrap CSS from a CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .subscription-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+        .subscription-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .subscription-container .form-group {
+            margin-bottom: 15px;
+        }
+        .subscription-btn {
+            width: 48%;
+            margin-bottom: 15px;
+        }
+    </style>
+    <script>
+        function showFamilySubscription() {
+            document.getElementById('familySubscription').style.display = 'block';
+            document.getElementById('individualSubscription').style.display = 'none';
+        }
+        
+        function showIndividualSubscription() {
+            document.getElementById('familySubscription').style.display = 'none';
+            document.getElementById('individualSubscription').style.display = 'block';
+        }
+
+        function redirectToLogin(event) {
+            event.preventDefault(); // Prevent form submission
+            // Perform form validation or submission here
+            window.location.href = "/login"; // Redirect to login page
+        }
+    </script>
+</head>
+<body>
+    <div class="subscription-container">
+        <h2>SUBSCRIPTION</h2>
+        <form onsubmit="redirectToLogin(event)">
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-primary subscription-btn" onclick="showFamilySubscription()">
+                    Family Subscription
+                </button>
+                <button type="button" class="btn btn-secondary subscription-btn" onclick="showIndividualSubscription()">
+                    Individual Subscription
+                </button>
+            </div>
+            <div id="familySubscription" style="display: none;">
+                <div class="card card-body">
+                    <div class="form-group">
+                        <label for="family_amount">Amount (for family)</label>
+                        <input type="text" class="form-control" id="family_amount" name="family_amount">
+                    </div>
+                    <div class="form-group">
+                        <label for="family_advantages">Advantages</label>
+                        <input type="text" class="form-control" id="family_advantages" name="family_advantages">
+                    </div>
+                </div>
+            </div>
+            <div id="individualSubscription" style="display: none;">
+                <div class="card card-body">
+                    <div class="form-group">
+                        <label for="single_amount">Amount (for individual)</label>
+                        <input type="text" class="form-control" id="single_amount" name="single_amount">
+                    </div>
+                    <div class="form-group">
+                        <label for="single_advantages">Advantages</label>
+                        <input type="text" class="form-control" id="single_advantages" name="single_advantages">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="offers">Any offers</label>
+                <input type="text" class="form-control" id="offers" name="offers">
+                <label for="total_amount">Total amount</label>
+                <input type="text" class="form-control" id="total_amount" name="total_amount">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" onclick="window.location.href=redirectToLogin">Sign in</button>
+        </form>
+    </div>
+    <!-- Load Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!-- tasks/templates/tasks/dashboard.html -->
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+    <div class="dashboard-container">
+        <h1>{{ patient.first_name }} {{ patient.last_name }}'s Health Dashboard</h1>
+
+        <div class="data-section">
+            <h2>EHR Data</h2>
+            {% if ehr_data %}
+                <p><strong>Diagnosis:</strong> {{ ehr_data.diagnosis }}</p>
+                <p><strong>Medications:</strong> {{ ehr_data.medications }}</p>
+                <p><strong>Allergies:</strong> {{ ehr_data.allergies }}</p>
+            {% else %}
+                <p>No EHR data available.</p>
+            {% endif %}
+        </div>
+
+        <div class="data-section">
+            <h2>Wearable Data</h2>
+            {% if wearable_data %}
+                <p><strong>Heart Rate:</strong> {{ wearable_data.heart_rate }} bpm</p>
+                <p><strong>Steps:</strong> {{ wearable_data.steps }} steps</p>
+                <p><strong>Sleep:</strong> {{ wearable_data.sleep_hours }} hours</p>
+            {% else %}
+                <p>No wearable data available.</p>
+            {% endif %}
+        </div>
+
+        <div class="data-section">
+            <h2>Lab Results</h2>
+            {% if lab_results %}
+                <ul>
+                    {% for result in lab_results %}
+                        <li><strong>{{ result.test_name }}:</strong> {{ result.result }} ({{ result.date }})</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No lab results available.</p>
+            {% endif %}
+        </div>
+
+        <div class="data-section">
+            <h2>Insurance</h2>
+            {% if insurance_data %}
+                <p><strong>Insurance Company:</strong> {{ insurance_data.insurance_company }}</p>
+                <p><strong>Plan Type:</strong> {{ insurance_data.plan_type }}</p>
+                <p><strong>Policy Number:</strong> {{ insurance_data.policy_number }}</p>
+            {% else %}
+                <p>No insurance data available.</p>
+            {% endif %}
+        </div>
+
+        <div class="data-section">
+            <h2>Pharmacy</h2>
+            {% if pharmacy_data %}
+                <ul>
+                    {% for prescription in pharmacy_data %}
+                        <li><strong>{{ prescription.medication_name }}:</strong> {{ prescription.dosage }} ({{ prescription.prescription_date }})</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No pharmacy data available.</p>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

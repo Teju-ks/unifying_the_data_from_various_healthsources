@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Management System</title>
+    <!-- Load the static template tag -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tasks/style.css' %}">
+    <!-- Load Bootstrap CSS from a CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .advertisement {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcWkKHPaXScbHq1xB-wcH_jgFg4wA9Y5Yd1Q&s");
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    
+     
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" >
+                
+                <a class="navbar-brand" href="#" style="font-size: 50px;" >MEDIDOC</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="font-size: 20px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login" style="font-size: 20px;">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="subscribe" style="font-size: 20px;">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="advertisement">
+            <h1 style="color: #f8f9fa; font-size: 60px; text-align: end  ; padding: 30px;" >  
+                Your health,our records
+            </h1><p style="color: #f8f9fa; font-size: 20px; text-align: end "> Let MediDoc handle your medical records...!</p>
+        </section>
+        <div class="row">
+            <div class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" >Pharmacy Services</h5>
+                        <p class="card-text">Pharmacy services in a patient record system streamline medication management and enhance patient safety.Implementing such a system ensures that all stakeholders, from healthcare providers to patients, benefit from improved communication, efficiency, and safety in medication management. It's a significant step towards enhancing overall healthcare quality. 😊 </p>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Insurence Services</h5>
+                        <p class="card-text">Insurance enable efficient claims processing and seamless policy integration, coverage management for patients.implementing such a system ensures that all stakeholders, from healthcare providers to patients, benefit from improved communication, efficiency, and safety in medication management. It's a significant step towards enhancing overall healthcare quality. 😊</p>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Medical Record Services</h5>
+                        <p class="card-text">It improve care by offering a complete patient history, reducing errors, and enhancing treatment.implementing such a system ensures that all stakeholders, from healthcare providers to patients, benefit from improved communication, efficiency, and safety in medication management. It's a significant step towards enhancing overall healthcare quality. 😊</p>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+        
+        <section class="about-us">
+            <style>
+                 
+
+.about-container {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description-container {
+    flex: 2;
+}
+
+.description-container h1 {
+    margin-top: 0;
+}
+
+.description-container p {
+    line-height: 1.6;
+    font-size: 17px;
+}
+            </style>
+            <div class="about-container">
+                <div class="image-container">
+                    <img src="https://img.freepik.com/free-vector/teamwork-concept-landing-page_52683-20165.jpg" alt="About Us Image">
+                </div>
+                <div class="description-container"><br><br>
+                    <h1>About Us</h1>
+                    <p><br>We simplify healthcare management with a secure platform that integrates data <br> from pharmacies, insurance, and hospitals. Patients can access records,<br> manage prescriptions, and track insurance seamlessly, while providers benefit from <br>efficient workflows and better coordination.With our user-friendly platform, patients<br> can easily access their health information, schedule appointments, track prescriptions <br>and manage insurance claims all in one place.  Our mission is to ensure secure, <br>accessible, and patient-focused healthcare solutions.</p>
+                </div>
+            </div>
+        
+        </section>
+
+
+
+
+
+
+<section>
+     <style> .faq-container { max-width: 800px; margin: 50px auto; } .faq-header { background-color: #f8f9fa; padding: 20px; border: 1px solid #ddd; margin-bottom: 10px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; } .faq-header:hover { background-color: #e9ecef; } .faq-body { border: 1px solid #ddd; border-top: none; padding: 20px; } .faq-icon { font-size: 20px; transition: transform 0.3s; } </style> </head> <body> <div class="faq-container"> <h1 class="text-center mb-4">Frequently Asked Questions</h1> <div class="faq-item"> <div class="faq-header" data-toggle="collapse" data-target="#faq1" aria-expanded="false" aria-controls="faq1"> <h5>What is the Mental Health Management System?</h5> <span class="faq-icon">+</span> </div> <div id="faq1" class="collapse faq-body"> <p>The Mental Health Management System is a comprehensive platform designed to manage patient records, provide mental health services, and support mental wellness initiatives.</p> </div> </div> <div class="faq-item"> <div class="faq-header" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2"> <h5>How can I create an account?</h5> <span class="faq-icon">+</span> </div> <div id="faq2" class="collapse faq-body"> <p>To create an account, go to the sign-up page, fill in the required details, and submit the form. You will receive a confirmation email to activate your account.</p> </div> </div> <div class="faq-item"> <div class="faq-header" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3"> <h5>What services are offered?</h5> <span class="faq-icon">+</span> </div> <div id="faq3" class="collapse faq-body"> <p>We offer a wide range of services including therapy sessions, support groups, medication management, and access to mental health resources.</p> </div> </div> <div class="faq-item"> <div class="faq-header" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4"> <h5>How can I contact support?</h5> <span class="faq-icon">+</span> </div> <div id="faq4" class="collapse faq-body"> <p>You can contact our support team via email at support@mentalhealthsystem.com or call us at (123) 456-7890. We are available 24/7 to assist you.</p> </div> </div> </div> <!-- Load Bootstrap JS and dependencies --> <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <script> $(document).ready(function(){ $('.faq-header').click(function() { var icon = $(this).find('.faq-icon'); if ($(this).next('.faq-body').hasClass('show')) { icon.text('+'); } else { $('.faq-icon').text('+'); icon.text('-'); } }); }); </script>
+
+</section>
+
+    </main>
+    <!-- Load Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrap.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+    <footer>
+        <style>
+            footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left p {
+    margin: 5px 0;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-right ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.footer-right ul li a img {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    vertical-align: middle;
+    border-radius: 50%; /* Makes the icons circular */
+    border: 2px solid white; /* Adds a white border */
+    padding: 5px; /* Adds padding inside the border */
+    background-color: #333; /* Matches the footer background */
+    transition: transform 0.2s; /* Adds a smooth transition effect */
+}
+
+.footer-right ul li a img:hover {
+    transform: scale(1.1); /* Scales the image on hover */
+}
+        </style>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 MediDoc. All rights reserved.</p>
+                <p>Phone: +91 7975033026</p>
+                <p>Email: reco@MediDoc.com</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank"><img src ="data:image/jpeg;base64,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" alt="Facebook"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/031/737/206/non_2x/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7xLgKSVh8rqymSuwVdm99UDOqV1UbeBk20Q&s" alt="LinkedIn"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="https://cdn.prod.website-files.com/65b8d9e0af2c51a8738e2bf7/6675a6c01e8dc8f84c517969_Youtube%20Logo.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
